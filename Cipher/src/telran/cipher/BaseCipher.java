@@ -47,10 +47,11 @@ public class BaseCipher {
 
 	public int decipher(String cipher) {
 		int res = 0;
-		int base = key.length();		
+		int base = key.length();
+		int cipherlength = cipher.length();
 		int index =0;
-		while (index<cipher.length()) {
-			res += Math.pow(base, index)*key.indexOf(cipher.charAt(cipher.length()-index-1));
+		while (index<cipherlength) {
+			res += Math.pow(base, index)*key.indexOf(cipher.charAt(cipherlength-index-1));
 			index++;
 		}
 		return res;
