@@ -37,7 +37,7 @@ public class BaseCipher {
 	public String cipher(int number) {
 		StringBuilder res = new StringBuilder("");		
 		int base = key.length();
-		while (number > base) {
+		while (number >= base) {
 			res.insert(0,key.charAt(number % base));
 			number = number / base;
 		}

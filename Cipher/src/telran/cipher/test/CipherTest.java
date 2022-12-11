@@ -35,8 +35,8 @@ class CipherTest {
 		decipher = cipherbase.decipher(cipher);
 		assertEquals(number, decipher);
 		
-		number = 94;
-		cipherbase = new BaseCipher(94);	// Yuri's example
+		number = 93;
+		cipherbase = new BaseCipher(93);	// Yuri's example
 		cipher = cipherbase.cipher(number);
 		decipher = cipherbase.decipher(cipher);
 		assertEquals(number, decipher);
