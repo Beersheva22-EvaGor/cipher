@@ -19,7 +19,7 @@ public class BaseCipher {
 		if (length < lengthMin) {
 			lengthReal = lengthMin;
 		}
-		if (length > lengthMax) {
+		else if (length > lengthMax) {
 			lengthReal = lengthMax;
 		}
 		int[] temparr = new int[valueMax - valueMin + 1];
